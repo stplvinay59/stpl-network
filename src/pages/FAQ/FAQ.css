@@ -1,0 +1,126 @@
+/* Base typography */
+body {
+  line-height: 1.6;
+  color: #000;
+  /* Default text color */
+}
+
+/* Section wrapper */
+.faq-section {
+  padding: 60px 20px;
+}
+
+/* Container */
+.faq-side {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.faq-side h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  color: #004e92;
+}
+
+/* FAQ card */
+.faq-side details {
+  background: #ffffff;
+  margin-bottom: 16px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  color: #000;
+  /* Ensure answer text is visible */
+}
+
+/* Hover effect */
+.faq-side details:hover {
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: #ffffff;
+  /* Hover text becomes white */
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+/* Summary */
+.faq-side summary {
+  font-weight: 700;
+  font-size: 16px;
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  color: inherit;
+  /* Follow parent color */
+}
+
+/* Remove default arrow */
+.faq-side summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom icon */
+.faq-side summary::after {
+  content: "➕";
+  float: right;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+/* Open state */
+.faq-side details[open] summary::after {
+  content: "➖";
+}
+
+/* Answer text */
+.faq-side details p {
+  margin-top: 10px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+  color: inherit;
+  /* Follow parent color */
+  color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .faq-side {
+    padding: 10px;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+
+  .faq-side details {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #f0f0f0;
+    /* Ensure text is white in dark mode */
+  }
+
+  .faq-side details:hover {
+    background: linear-gradient(135deg, #1a73e8, #4285f4);
+    color: #1a73e8;
+  }
+}

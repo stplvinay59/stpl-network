@@ -1,0 +1,207 @@
+/* ================= GOOGLE FONTS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Serif:wght@600;700&display=swap');
+
+/* ================= PAGE RESET (SCOPED) ================= */
+.privacy-main {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  color: #1a202c;
+  line-height: 1.8;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  animation: fadeIn 0.6s ease;
+}
+
+.privacy-main * {
+  box-sizing: border-box;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.privacy-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3.5rem 3rem;
+  background: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative accent */
+.privacy-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  opacity: 0.05;
+  border-radius: 0 16px 0 100%;
+}
+
+/* ================= HEADINGS ================= */
+.privacy-title {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+  color: #004e92;
+  font-family: 'IBM Plex Serif', serif;
+  position: relative;
+}
+
+.privacy-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, #004e92, #00a8e8);
+  border-radius: 3px;
+}
+
+.section-heading {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 600;
+  margin: 2.5rem 0 1.2rem;
+  padding-left: 1.2rem;
+  color: #004e92;
+  font-family: 'IBM Plex Serif', serif;
+  position: relative;
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #004e92, #00a8e8);
+  border-radius: 3px;
+}
+
+/* ================= SECTIONS ================= */
+.privacy-section {
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 0.7s ease;
+}
+
+/* ================= LISTS ================= */
+.terms-list {
+  list-style: none;
+  margin-top: 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.terms-list-item {
+  padding-left: 2.2rem;
+  position: relative;
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.terms-list-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(135deg, #004e92, #0077cc);
+  color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+}
+
+/* ================= LINKS ================= */
+.privacy-link,
+.privacy-link-1 {
+  color: #004e92;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.privacy-link:hover,
+.privacy-link-1:hover {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+/* ================= CONTACT SECTION ================= */
+.middleheading {
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.middleheading h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  color: #004e92;
+  margin-bottom: 2rem;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  min-width: 260px;
+  text-align: center;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.contact-info-1 {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #4a5568;
+  text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

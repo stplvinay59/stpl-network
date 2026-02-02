@@ -1,0 +1,112 @@
+/* ==================== SERVICE HOME – HERO SECTION ==================== */
+
+/* Wrapper safety (future-proof if page grows) */
+.service-home {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ==================== HERO SECTION ==================== */
+
+.service-hero {
+  min-height: 90vh;
+  padding: 80px 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Background image handling (IMPORTANT) */
+  background-image: url("service-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* Optional overlay for text readability */
+.service-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* Ensure content stays above overlay */
+.service-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ==================== HERO TITLE ==================== */
+
+.service-hero__title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+
+  /* Override global black text safely */
+  color: #ffffff !important;
+
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* ==================== HERO SUBTITLE ==================== */
+
+.service-hero__subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  max-width: 850px;
+  line-height: 1.6;
+
+  color: #f1f1f1 !important;
+
+  animation: fadeInUp 1s ease-out;
+}
+
+/* ==================== ANIMATIONS ==================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 1024px) {
+  .service-hero {
+    padding: 70px 6%;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero {
+    min-height: 85vh;
+    padding: 60px 5%;
+  }
+
+  .service-hero__title {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-hero {
+    min-height: 80vh;
+    padding: 50px 4%;
+  }
+
+  .service-hero__subtitle {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,293 @@
+/* ===========================
+   RESET & BASE
+   =========================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+.tech-support-hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/Trust-section-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+}
+
+/* ===========================
+   QUICK SUPPORT
+   =========================== */
+.quick-support {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.support-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.support-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.support-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.support-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.support-card i {
+  font-size: 3rem;
+  color: #667eea;
+  margin-bottom: 20px;
+}
+
+.support-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.support-card p {
+  margin-bottom: 25px;
+  color: #718096;
+}
+
+.support-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* ===========================
+   COMMON ISSUES
+   =========================== */
+.common-issues {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.issues-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.issues-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.issues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.issue-item {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.issue-item h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.issue-item ul {
+  list-style: none;
+}
+
+.issue-item li {
+  padding: 8px 0 8px 25px;
+  position: relative;
+}
+
+.issue-item li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* ===========================
+   TECH RESOURCES
+   =========================== */
+.tech-resources {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.resources-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.resources-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.resource-card {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.resource-card i {
+  font-size: 3rem;
+  color: #667eea;
+  margin-bottom: 20px;
+}
+
+.resource-card h3 {
+  margin-bottom: 15px;
+}
+
+.resource-card a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===========================
+   CONTACT SUPPORT
+   =========================== */
+.contact-support {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.contact-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.contact-option {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact-option a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.chat-btn {
+  margin-top: 15px;
+  padding: 12px 30px;
+  background: #fff;
+  color: #667eea;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-support-hero {
+    padding: 80px 15px 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+}

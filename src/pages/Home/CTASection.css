@@ -1,0 +1,98 @@
+/*-=-=-=-=-=-=====-=-=*/
+/* Styles for Call to Action Section */
+.cta-section {
+  padding: 60px 8%;
+  /* background: linear-gradient(135deg, #004e92 0%, #022c66 100%); */
+  text-align: center;
+  color: #000000;
+}
+
+.cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-container h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.cta-container p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #fff;
+  color: #004e92;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-cta:hover {
+  background: #f4f4f9;
+  transform: translateY(-2px);
+}
+
+.btn-cta:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Responsive Design for Call to Action Section */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 40px 5%;
+  }
+
+  .cta-container h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+  }
+
+  .cta-container p {
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+  }
+
+  .btn-cta {
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-section {
+    padding: 30px 3%;
+  }
+
+  .cta-container h2 {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+  }
+
+  .cta-container p {
+    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  }
+
+  .btn-cta {
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  background: #e0e0ff;
+  color: #022c66;
+  transform: translateY(-3px);
+}
+
+html {
+  scroll-behavior: smooth;
+}

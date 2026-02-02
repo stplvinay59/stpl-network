@@ -1,0 +1,152 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#stpl-terms-root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HERO SECTION */
+#stpl-terms-banner {
+  background: linear-gradient(135deg, #0f4c75, #3282b8);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.stpl-terms-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.stpl-terms-content p {
+  font-size: 1.1rem;
+}
+
+/* TERMS SECTION */
+#stpl-terms-main {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.stpl-terms-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.stpl-terms-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stpl-terms-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* TERMS CARDS */
+.stpl-terms-card {
+  background: #fff;
+  border-left: 5px solid #3282b8;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+/* DETAILS */
+.stpl-terms-details {
+  margin-top: 30px;
+  padding: 15px;
+  background: #eef5fb;
+  border-radius: 6px;
+}
+
+.stpl-terms-details summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stpl-terms-details ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* COMMON SECTIONS */
+.stpl-terms-privacy-section,
+.stpl-terms-aup-section,
+.stpl-terms-billing-section,
+.stpl-terms-legal-section,
+.stpl-terms-contact-section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.stpl-terms-privacy-section h2,
+.stpl-terms-aup-section h2,
+.stpl-terms-billing-section h2,
+.stpl-terms-legal-section h2,
+.stpl-terms-contact-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.stpl-terms-aup-section ul,
+.stpl-terms-contact-section ul {
+  padding-left: 20px;
+}
+
+.stpl-terms-contact-section a {
+  color: #0f4c75;
+  text-decoration: none;
+}
+
+.stpl-terms-contact-section a:hover {
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ========================= */
+
+@media (max-width: 576px) {
+  .stpl-terms-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .stpl-terms-title {
+    font-size: 1.6rem;
+  }
+
+  .stpl-terms-card {
+    padding: 12px 15px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .stpl-terms-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .stpl-terms-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #stpl-terms-banner {
+    padding: 100px 20px;
+  }
+
+  .stpl-terms-card {
+    padding: 18px 25px;
+  }
+}

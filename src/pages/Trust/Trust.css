@@ -1,0 +1,171 @@
+:root {
+  --primary-color: #004e92;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --accent-color: #28a745;
+  --white: #ffffff;
+  --font-family: Arial, sans-serif;
+  --padding-section: 60px 20px;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* ================= TRUST HERO ================= */
+.trust-section {
+  min-height: 80vh;
+  padding: 100px 20px;
+  background: linear-gradient(
+      135deg,
+      rgba(77, 77, 78, 0.4),
+      rgba(3, 6, 28, 0.9)
+    ),
+    url("//Trust-Hands.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-trust-homepage {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.headline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #cfcfcf;
+}
+
+/* ================= BUTTONS ================= */
+.btn-homepage {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-h {
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--white);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: #003b70;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline:hover {
+  background: #ffffff;
+  color: var(--primary-color);
+}
+
+/* ================= COMPLIANCE ================= */
+.compliance {
+  padding: var(--padding-section);
+  background: #ffffff;
+  text-align: center;
+}
+
+.compliance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 2rem auto 0;
+}
+
+.compliance-item {
+  padding: 2rem;
+  border-radius: 12px;
+  background: #f8f9ff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.compliance-item:hover {
+  transform: translateY(-8px);
+}
+
+.compliance-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* ================= TRUST CONNECTION ================= */
+.trust-connection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: var(--padding-section);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.trust-video video {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* ================= FINAL CTA ================= */
+.final-cta {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f9fafc, #e6f0ff);
+}
+
+.cta-buttons-advanced {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 16px 32px;
+  background: var(--primary-color);
+  color: #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .trust-connection {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

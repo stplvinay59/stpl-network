@@ -1,0 +1,872 @@
+/* Business Support Styles - STPL Network */
+
+/* Common Styles and Variables */
+:root {
+    --stpl-primary-color: #004e92;
+    --stpl-secondary-color: #03061c;
+    --stpl-accent-color: #0077cc;
+    --stpl-light-bg: #f8f9fa;
+    --stpl-dark-text: #333;
+    --stpl-light-text: #fff;
+    --stpl-border-radius: 8px;
+    --stpl-transition: all 0.3s ease;
+    --stpl-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.stpl-business-hero-banner {
+    background: linear-gradient(rgba(3, 6, 28, 0.9), rgba(0, 78, 146, 0.9)), url('//building-connections.webp');
+    background-size: cover;
+    background-position: center;
+    color: var(--stpl-light-text);
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.stpl-business-hero-content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stpl-business-hero-main-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.stpl-business-hero-subtitle-text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.stpl-business-hero-cta-buttons-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.stpl-business-cta-btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--stpl-transition);
+}
+
+.stpl-business-cta-primary-btn {
+    background: var(--stpl-primary-color);
+    color: var(--stpl-light-text);
+}
+
+.stpl-business-cta-secondary-btn {
+    background: transparent;
+    color: var(--stpl-light-text);
+    border: 2px solid var(--stpl-light-text);
+}
+
+/* .stpl-business-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--stpl-box-shadow);
+} */
+
+/* Section Headers */
+.stpl-business-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.stpl-business-section-title {
+    font-size: 2.5rem;
+    color: var(--stpl-primary-color);
+    margin-bottom: 15px;
+}
+
+.stpl-business-section-description {
+    font-size: 1.1rem;
+    color: var(--stpl-dark-text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Business Solutions Section */
+.stpl-business-solutions-section {
+    padding: 80px 20px;
+    background: var(--stpl-light-bg);
+}
+
+.stpl-solutions-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stpl-business-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.stpl-business-solution-card {
+    background: var(--stpl-light-text);
+    border-radius: var(--stpl-border-radius);
+    padding: 30px;
+    box-shadow: var(--stpl-box-shadow);
+    transition: var(--stpl-transition);
+}
+
+.stpl-business-solution-card:hover {
+    transform: translateY(-5px);
+}
+
+.stpl-solution-card-icon {
+    font-size: 2.5rem;
+    color: var(--stpl-primary-color);
+    margin-bottom: 20px;
+}
+
+.stpl-solution-card-content {
+    margin-top: 10px;
+}
+
+.stpl-solution-card-title {
+    font-size: 1.5rem;
+    color: var(--stpl-dark-text);
+    margin-bottom: 15px;
+}
+
+.stpl-solution-card-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.stpl-solution-feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.stpl-solution-feature-item {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.stpl-solution-feature-item:before {
+    content: "•";
+    color: var(--stpl-primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+}
+
+/* Enterprise Support Section */
+.stpl-enterprise-support-section {
+    padding: 80px 20px;
+    background: var(--stpl-light-text);
+}
+
+.stpl-enterprise-support-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stpl-enterprise-support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.stpl-enterprise-support-item {
+    text-align: center;
+    padding: 30px;
+    transition: var(--stpl-transition);
+}
+
+.stpl-enterprise-support-icon {
+    font-size: 2.5rem;
+    color: var(--stpl-primary-color);
+    margin-bottom: 20px;
+}
+
+.stpl-enterprise-support-item-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--stpl-dark-text);
+}
+
+.stpl-enterprise-support-item-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* SLA Section */
+.stpl-business-sla-section {
+    padding: 80px 20px;
+    background: var(--stpl-light-bg);
+}
+
+.stpl-business-sla-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stpl-business-sla-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.stpl-business-sla-card {
+    background: var(--stpl-light-text);
+    padding: 30px;
+    border-radius: var(--stpl-border-radius);
+    text-align: center;
+    box-shadow: var(--stpl-box-shadow);
+}
+
+.stpl-sla-card-title {
+    font-size: 1.3rem;
+    color: var(--stpl-dark-text);
+    margin-bottom: 10px;
+}
+
+.stpl-sla-card-value {
+    font-size: 2.5rem;
+    color: var(--stpl-primary-color);
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.stpl-sla-card-description {
+    color: #666;
+}
+
+/* Contact Section */
+.stpl-business-contact-section {
+    padding: 80px 20px;
+    background: var(--stpl-light-text);
+}
+
+.stpl-business-contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stpl-business-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.stpl-business-contact-card {
+    background: var(--stpl-light-bg);
+    padding: 30px;
+    border-radius: var(--stpl-border-radius);
+    text-align: center;
+    box-shadow: var(--stpl-box-shadow);
+}
+
+.stpl-business-contact-icon {
+    font-size: 2rem;
+    color: var(--stpl-primary-color);
+    margin-bottom: 20px;
+}
+
+.stpl-business-contact-card-title {
+    font-size: 1.3rem;
+    color: var(--stpl-dark-text);
+    margin-bottom: 15px;
+}
+
+.stpl-business-contact-numbers {
+    margin-top: 15px;
+}
+
+.stpl-business-contact-number-item {
+    margin: 8px 0;
+}
+
+.stpl-business-contact-numbers a {
+    text-decoration: none;
+    color: #0b5394;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.stpl-business-contact-numbers a:hover {
+    color: #ff6600;
+}
+
+.stpl-business-contact-email {
+    color: #0b5394;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.stpl-business-schedule-btn {
+    background: var(--stpl-primary-color);
+    color: var(--stpl-light-text);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: var(--stpl-transition);
+}
+
+.stpl-business-schedule-btn:hover {
+    background: var(--stpl-accent-color);
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes stplBusinessFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stpl-business-solution-card,
+.stpl-enterprise-support-item,
+.stpl-business-sla-card,
+.stpl-business-contact-card {
+    animation: stplBusinessFadeIn 0.6s ease-out forwards;
+}
+
+/* Accessibility */
+.stpl-business-cta-btn:focus,
+.stpl-business-schedule-btn:focus {
+    outline: 3px solid var(--stpl-accent-color);
+    outline-offset: 2px;
+}
+
+/* ====================================================================
+   RESPONSIVE DESIGN - COMPREHENSIVE MEDIA QUERIES FOR ALL SCREEN SIZES
+   ==================================================================== */
+
+/* Extra Large Desktops (1920px and above) */
+@media (min-width: 1920px) {
+    .stpl-business-hero-content-wrapper,
+    .stpl-solutions-content-container,
+    .stpl-enterprise-support-container,
+    .stpl-business-sla-container,
+    .stpl-business-contact-container {
+        max-width: 1600px;
+    }
+
+    .stpl-business-hero-main-heading {
+        font-size: 4rem;
+    }
+
+    .stpl-business-hero-subtitle-text {
+        font-size: 1.4rem;
+    }
+
+    .stpl-business-section-title {
+        font-size: 3rem;
+    }
+
+    .stpl-business-solutions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large Desktops (1440px to 1919px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .stpl-business-hero-content-wrapper,
+    .stpl-solutions-content-container,
+    .stpl-enterprise-support-container,
+    .stpl-business-sla-container,
+    .stpl-business-contact-container {
+        max-width: 1320px;
+    }
+
+    .stpl-business-hero-main-heading {
+        font-size: 3.8rem;
+    }
+
+    .stpl-business-solutions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Standard Desktops (1200px to 1439px) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .stpl-business-hero-main-heading {
+        font-size: 3.5rem;
+    }
+
+    .stpl-business-solutions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stpl-enterprise-support-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Laptops (1024px to 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .stpl-business-hero-main-heading {
+        font-size: 3rem;
+    }
+
+    .stpl-business-hero-subtitle-text {
+        font-size: 1.1rem;
+    }
+
+    .stpl-business-section-title {
+        font-size: 2.3rem;
+    }
+
+    .stpl-business-solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .stpl-enterprise-support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stpl-business-sla-grid,
+    .stpl-business-contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Small Laptops and Tablets Landscape (900px to 1023px) */
+@media (min-width: 900px) and (max-width: 1023px) {
+    .stpl-business-hero-banner {
+        padding: 100px 20px;
+    }
+
+    .stpl-business-hero-main-heading {
+        font-size: 2.8rem;
+    }
+
+    .stpl-business-section-title {
+        font-size: 2.2rem;
+    }
+
+    .stpl-business-solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .stpl-enterprise-support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stpl-business-sla-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stpl-business-contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets Portrait (768px to 899px) */
+@media (min-width: 768px) and (max-width: 899px) {
+    .stpl-business-hero-banner {
+        padding: 90px 20px;
+    }
+
+    .stpl-business-hero-main-heading {
+        font-size: 2.5rem;
+    }
+
+    .stpl-business-hero-subtitle-text {
+        font-size: 1.05rem;
+    }
+
+    .stpl-business-hero-cta-buttons-container {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .stpl-business-cta-btn {
+        padding: 13px 25px;
+        font-size: 0.95rem;
+    }
+
+    .stpl-business-section-title {
+        font-size: 2rem;
+    }
+
+    .stpl-business-section-description {
+        font-size: 1rem;
+    }
+
+    .stpl-business-solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stpl-enterprise-support-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stpl-business-sla-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .stpl-business-contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stpl-business-solution-card,
+    .stpl-enterprise-support-item,
+    .stpl-business-sla-card,
+    .stpl-business-contact-card {
+        padding: 25px;
+    }
+}
+
+/* Large Mobile Devices (640px to 767px) */
+@media (min-width: 640px) and (max-width: 767px) {
+    .stpl-business-hero-banner {
+        padding: 80px 15px;
+    }
+
+    .stpl-business-hero-main-heading {
+        font-size: 2.2rem;
+    }
+
+    .stpl-business-hero-subtitle-text {
+        font-size: 1rem;
+    }
+
+    .stpl-business-hero-cta-buttons-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stpl-business-cta-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .stpl-business-section-title {
+        font-size: 1.9rem;
+    }
+
+    .stpl-business-section-description {
+        font-size: 0.95rem;
+    }
+
+    .stpl-business-solutions-grid,
+    .stpl-enterprise-support-grid,
+    .stpl-business-sla-grid,
+    .stpl-business-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .stpl-solution-card-icon,
+    .stpl-enterprise-support-icon {
+        font-size: 2.2rem;
+    }
+
+    .stpl-sla-card-value {
+        font-size: 2.2rem;
+    }
+}
+
+/* Standard Mobile Devices (480px to 639px) */
+@media (min-width: 480px) and (max-width: 639px) {
+    .stpl-business-hero-banner {
+        padding: 70px 15px;
+    }
+
+    .stpl-business-hero-main-heading {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .stpl-business-hero-subtitle-text {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    .stpl-business-hero-cta-buttons-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .stpl-business-cta-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .stpl-business-section-header {
+        margin-bottom: 40px;
+    }
+
+    .stpl-business-section-title {
+        font-size: 1.8rem;
+    }
+
+    .stpl-business-section-description {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .stpl-business-solutions-section,
+    .stpl-enterprise-support-section,
+    .stpl-business-sla-section,
+    .stpl-business-contact-section {
+        padding: 60px 15px;
+    }
+
+    .stpl-business-solutions-grid,
+    .stpl-enterprise-support-grid,
+    .stpl-business-sla-grid,
+    .stpl-business-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .stpl-business-solution-card,
+    .stpl-enterprise-support-item,
+    .stpl-business-sla-card,
+    .stpl-business-contact-card {
+        padding: 20px;
+    }
+
+    .stpl-solution-card-icon,
+    .stpl-enterprise-support-icon {
+        font-size: 2rem;
+    }
+
+    .stpl-solution-card-title,
+    .stpl-enterprise-support-item-title {
+        font-size: 1.2rem;
+    }
+
+    .stpl-sla-card-value {
+        font-size: 2rem;
+    }
+}
+
+/* Small Mobile Devices (360px to 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+    .stpl-business-hero-banner {
+        padding: 60px 12px;
+    }
+
+    .stpl-business-hero-main-heading {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .stpl-business-hero-subtitle-text {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+
+    .stpl-business-hero-cta-buttons-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stpl-business-cta-btn {
+        width: 100%;
+        padding: 11px 18px;
+        font-size: 0.85rem;
+    }
+
+    .stpl-business-section-header {
+        margin-bottom: 35px;
+    }
+
+    .stpl-business-section-title {
+        font-size: 1.6rem;
+    }
+
+    .stpl-business-section-description {
+        font-size: 0.85rem;
+        padding: 0 5px;
+    }
+
+    .stpl-business-solutions-section,
+    .stpl-enterprise-support-section,
+    .stpl-business-sla-section,
+    .stpl-business-contact-section {
+        padding: 50px 12px;
+    }
+
+    .stpl-business-solutions-grid,
+    .stpl-enterprise-support-grid,
+    .stpl-business-sla-grid,
+    .stpl-business-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .stpl-business-solution-card,
+    .stpl-enterprise-support-item,
+    .stpl-business-sla-card,
+    .stpl-business-contact-card {
+        padding: 18px;
+    }
+
+    .stpl-solution-card-icon,
+    .stpl-enterprise-support-icon,
+    .stpl-business-contact-icon {
+        font-size: 1.8rem;
+    }
+
+    .stpl-solution-card-title,
+    .stpl-enterprise-support-item-title,
+    .stpl-business-contact-card-title {
+        font-size: 1.1rem;
+    }
+
+    .stpl-solution-card-description,
+    .stpl-enterprise-support-item-description {
+        font-size: 0.85rem;
+    }
+
+    .stpl-sla-card-value {
+        font-size: 1.8rem;
+    }
+
+    .stpl-business-schedule-btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra Small Mobile Devices (below 360px) */
+@media (max-width: 359px) {
+    .stpl-business-hero-banner {
+        padding: 50px 10px;
+    }
+
+    .stpl-business-hero-main-heading {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .stpl-business-hero-subtitle-text {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+
+    .stpl-business-hero-cta-buttons-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stpl-business-cta-btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+
+    .stpl-business-section-header {
+        margin-bottom: 30px;
+    }
+
+    .stpl-business-section-title {
+        font-size: 1.5rem;
+    }
+
+    .stpl-business-section-description {
+        font-size: 0.8rem;
+        padding: 0 5px;
+    }
+
+    .stpl-business-solutions-section,
+    .stpl-enterprise-support-section,
+    .stpl-business-sla-section,
+    .stpl-business-contact-section {
+        padding: 40px 10px;
+    }
+
+    .stpl-business-solutions-grid,
+    .stpl-enterprise-support-grid,
+    .stpl-business-sla-grid,
+    .stpl-business-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .stpl-business-solution-card,
+    .stpl-enterprise-support-item,
+    .stpl-business-sla-card,
+    .stpl-business-contact-card {
+        padding: 15px;
+    }
+
+    .stpl-solution-card-icon,
+    .stpl-enterprise-support-icon,
+    .stpl-business-contact-icon {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .stpl-solution-card-title,
+    .stpl-enterprise-support-item-title,
+    .stpl-business-contact-card-title,
+    .stpl-sla-card-title {
+        font-size: 1rem;
+    }
+
+    .stpl-solution-card-description,
+    .stpl-enterprise-support-item-description,
+    .stpl-sla-card-description {
+        font-size: 0.8rem;
+    }
+
+    .stpl-solution-feature-item {
+        font-size: 0.8rem;
+        padding-left: 20px;
+    }
+
+    .stpl-sla-card-value {
+        font-size: 1.6rem;
+    }
+
+    .stpl-business-schedule-btn {
+        padding: 9px 18px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .stpl-business-hero-banner {
+        background: none;
+        color: #000;
+    }
+
+    .stpl-business-cta-btn,
+    .stpl-business-schedule-btn {
+        display: none;
+    }
+
+    .stpl-business-solution-card,
+    .stpl-enterprise-support-item,
+    .stpl-business-sla-card,
+    .stpl-business-contact-card {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}

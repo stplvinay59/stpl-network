@@ -1,0 +1,1009 @@
+/* Company Overview Styles - STPL Network */
+
+:root {
+  --stpl-company-primary-color: #2c3e50;
+  --stpl-company-secondary-color: #3498db;
+  --stpl-company-accent-color: #e74c3c;
+  --stpl-company-text-light: #ecf0f1;
+  --stpl-company-text-dark: #2c3e50;
+  --stpl-company-background-light: #f8f9fa;
+  --stpl-company-background-dark: #2c3e50;
+  --stpl-company-transition-speed: 0.3s;
+  --stpl-company-border-radius: 8px;
+  --stpl-company-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.stpl-company-hero-banner {
+  background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('//Builidng-grayscale-BG-1.png');
+  background-size: cover;
+  background-position: center;
+  color: var(--stpl-company-text-light);
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+}
+
+.stpl-company-hero-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stpl-company-hero-main-heading {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  animation: stplCompanyFadeInUp 1s ease-out;
+}
+
+.stpl-company-hero-tagline {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  animation: stplCompanyFadeInUp 1s ease-out 0.2s;
+  animation-fill-mode: backwards;
+}
+
+.stpl-company-hero-stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.stpl-company-stat-item {
+  text-align: center;
+  animation: stplCompanyFadeInUp 1s ease-out 0.4s;
+  animation-fill-mode: backwards;
+}
+
+.stpl-stat-number-display {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--stpl-company-secondary-color);
+}
+
+.stpl-stat-label-text {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Company Description Section */
+.stpl-company-description-section {
+  padding: 80px 0;
+  background-color: var(--stpl-company-background-light);
+}
+
+.stpl-company-description-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stpl-company-section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.stpl-company-section-title {
+  font-size: 2.5rem;
+  color: var(--stpl-company-text-dark);
+  margin-bottom: 15px;
+}
+
+.stpl-company-section-subtitle {
+  font-size: 1.2rem;
+  color: var(--stpl-company-secondary-color);
+}
+
+.stpl-company-description-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.stpl-company-description-image img {
+  width: 100%;
+  border-radius: var(--stpl-company-border-radius);
+  box-shadow: var(--stpl-company-box-shadow);
+}
+
+.stpl-company-description-text {
+  padding: 30px;
+  background: #fff;
+  border-radius: var(--stpl-company-border-radius);
+  box-shadow: var(--stpl-company-box-shadow);
+}
+
+.stpl-company-highlight-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--stpl-company-primary-color);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.stpl-company-description-text p {
+  color: var(--stpl-company-text-dark);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.stpl-company-key-points {
+  margin-top: 25px;
+}
+
+.stpl-company-key-point-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: var(--stpl-company-text-dark);
+}
+
+.stpl-company-key-point-item i {
+  color: var(--stpl-company-secondary-color);
+  font-size: 1.2rem;
+}
+
+/* Services Overview Section */
+.stpl-company-services-overview-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.stpl-company-services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stpl-company-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stpl-company-service-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: var(--stpl-company-border-radius);
+  box-shadow: var(--stpl-company-box-shadow);
+  text-align: center;
+  transition: transform var(--stpl-company-transition-speed);
+}
+
+.stpl-company-service-card:hover {
+  transform: translateY(-5px);
+}
+
+.stpl-company-service-icon {
+  font-size: 2.5rem;
+  color: var(--stpl-company-secondary-color);
+  margin-bottom: 20px;
+}
+
+.stpl-company-service-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--stpl-company-text-dark);
+}
+
+.stpl-company-service-description {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Vision & Mission Section */
+.stpl-company-vision-mission-section {
+  padding: 80px 0;
+  background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('/Builidng-grayscale-BG-2.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.stpl-company-section-title-light {
+  color: white !important;
+}
+
+.stpl-company-section-subtitle-light {
+  color: var(--stpl-company-text-light) !important;
+  opacity: 0.9;
+}
+
+.stpl-company-vision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stpl-company-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stpl-company-vision-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: var(--stpl-company-border-radius);
+  backdrop-filter: blur(5px);
+  transition: transform var(--stpl-company-transition-speed);
+}
+
+.stpl-company-vision-card:hover {
+  transform: translateY(-5px);
+}
+
+.stpl-company-vision-icon {
+  font-size: 2.5rem;
+  color: var(--stpl-company-secondary-color);
+  margin-bottom: 20px;
+}
+
+.stpl-company-vision-card-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.stpl-company-vision-card-description {
+  color: var(--stpl-company-text-light);
+  line-height: 1.6;
+}
+
+.stpl-company-values-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.stpl-company-values-list-item {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: var(--stpl-company-text-light);
+}
+
+.stpl-company-values-list-item::before {
+  content: "•";
+  color: var(--stpl-company-secondary-color);
+  position: absolute;
+  left: 0;
+}
+
+/* Leadership Section */
+.stpl-company-leadership-section {
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+}
+
+.stpl-company-leadership-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(52, 152, 219, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.stpl-company-leadership-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stpl-company-leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.stpl-company-leader-card {
+  background: #ffffff;
+  border-radius: var(--stpl-company-border-radius);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: stplCompanyFadeInUp 0.6s ease forwards;
+}
+
+.stpl-company-leader-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.stpl-company-leader-image {
+  position: relative;
+  padding-top: 100%;
+  background: linear-gradient(45deg, var(--stpl-company-primary-color), var(--stpl-company-secondary-color));
+  overflow: hidden;
+}
+
+.stpl-company-leader-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.stpl-company-leader-card:hover .stpl-company-leader-image img {
+  transform: scale(1.05);
+}
+
+.stpl-company-leader-social-links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.stpl-company-leader-card:hover .stpl-company-leader-social-links {
+  transform: translateY(0);
+}
+
+.stpl-company-leader-social-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.stpl-company-leader-social-links a:hover {
+  color: var(--stpl-company-secondary-color);
+}
+
+.stpl-company-leader-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.stpl-company-leader-name {
+  color: var(--stpl-company-primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.stpl-company-leader-position {
+  color: var(--stpl-company-secondary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.stpl-company-leader-bio {
+  color: var(--stpl-company-text-dark);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.stpl-company-leader-expertise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.stpl-company-expertise-tag {
+  background: rgba(52, 152, 219, 0.1);
+  color: var(--stpl-company-secondary-color);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* Animations */
+@keyframes stplCompanyFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger animation for leadership cards */
+.stpl-company-leader-card:nth-child(1) { animation-delay: 0.2s; }
+.stpl-company-leader-card:nth-child(2) { animation-delay: 0.4s; }
+.stpl-company-leader-card:nth-child(3) { animation-delay: 0.6s; }
+.stpl-company-leader-card:nth-child(4) { animation-delay: 0.8s; }
+
+/* ====================================================================
+   RESPONSIVE DESIGN - COMPREHENSIVE MEDIA QUERIES FOR ALL SCREEN SIZES
+   ==================================================================== */
+
+/* Extra Large Desktops (1920px and above) */
+@media (min-width: 1920px) {
+  .stpl-company-hero-content-wrapper,
+  .stpl-company-description-container,
+  .stpl-company-services-container,
+  .stpl-company-vision-container,
+  .stpl-company-leadership-container {
+    max-width: 1600px;
+  }
+
+  .stpl-company-hero-main-heading {
+    font-size: 4rem;
+  }
+
+  .stpl-company-hero-tagline {
+    font-size: 1.7rem;
+  }
+
+  .stpl-company-section-title {
+    font-size: 3rem;
+  }
+
+  .stpl-company-services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Large Desktops (1440px to 1919px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .stpl-company-hero-content-wrapper,
+  .stpl-company-description-container,
+  .stpl-company-services-container,
+  .stpl-company-vision-container,
+  .stpl-company-leadership-container {
+    max-width: 1320px;
+  }
+
+  .stpl-company-hero-main-heading {
+    font-size: 3.8rem;
+  }
+
+  .stpl-company-services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Standard Desktops (1200px to 1439px) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .stpl-company-hero-main-heading {
+    font-size: 3.5rem;
+  }
+
+  .stpl-company-services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .stpl-company-leadership-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Laptops (1024px to 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .stpl-company-hero-main-heading {
+    font-size: 3rem;
+  }
+
+  .stpl-company-hero-tagline {
+    font-size: 1.3rem;
+  }
+
+  .stpl-company-section-title {
+    font-size: 2.3rem;
+  }
+
+  .stpl-company-description-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .stpl-company-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stpl-company-vision-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stpl-company-leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small Laptops and Tablets Landscape (900px to 1023px) */
+@media (min-width: 900px) and (max-width: 1023px) {
+  .stpl-company-hero-banner {
+    padding: 100px 0;
+  }
+
+  .stpl-company-hero-main-heading {
+    font-size: 2.8rem;
+  }
+
+  .stpl-company-section-title {
+    font-size: 2.2rem;
+  }
+
+  .stpl-company-description-content {
+    grid-template-columns: 1fr;
+  }
+
+  .stpl-company-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stpl-company-vision-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stpl-company-leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets Portrait (768px to 899px) */
+@media (min-width: 768px) and (max-width: 899px) {
+  .stpl-company-hero-banner {
+    padding: 90px 0;
+  }
+
+  .stpl-company-hero-main-heading {
+    font-size: 2.5rem;
+  }
+
+  .stpl-company-hero-tagline {
+    font-size: 1.2rem;
+  }
+
+  .stpl-company-hero-stats-container {
+    gap: 30px;
+  }
+
+  .stpl-stat-number-display {
+    font-size: 2.2rem;
+  }
+
+  .stpl-stat-label-text {
+    font-size: 1rem;
+  }
+
+  .stpl-company-description-section,
+  .stpl-company-services-overview-section,
+  .stpl-company-vision-mission-section,
+  .stpl-company-leadership-section {
+    padding: 70px 0;
+  }
+
+  .stpl-company-section-title {
+    font-size: 2rem;
+  }
+
+  .stpl-company-section-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .stpl-company-description-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .stpl-company-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .stpl-company-vision-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .stpl-company-leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .stpl-company-service-card,
+  .stpl-company-vision-card,
+  .stpl-company-leader-card {
+    padding: 25px;
+  }
+}
+
+/* Large Mobile Devices (640px to 767px) */
+@media (min-width: 640px) and (max-width: 767px) {
+  .stpl-company-hero-banner {
+    padding: 80px 0;
+  }
+
+  .stpl-company-hero-main-heading {
+    font-size: 2.2rem;
+  }
+
+  .stpl-company-hero-tagline {
+    font-size: 1.1rem;
+  }
+
+  .stpl-company-hero-stats-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .stpl-stat-number-display {
+    font-size: 2rem;
+  }
+
+  .stpl-company-description-section,
+  .stpl-company-services-overview-section,
+  .stpl-company-vision-mission-section,
+  .stpl-company-leadership-section {
+    padding: 60px 0;
+  }
+
+  .stpl-company-section-header {
+    margin-bottom: 40px;
+  }
+
+  .stpl-company-section-title {
+    font-size: 1.9rem;
+  }
+
+  .stpl-company-section-subtitle {
+    font-size: 1rem;
+  }
+
+  .stpl-company-description-content {
+    grid-template-columns: 1fr;
+  }
+
+  .stpl-company-services-grid,
+  .stpl-company-vision-grid,
+  .stpl-company-leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stpl-company-leadership-grid {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Standard Mobile Devices (480px to 639px) */
+@media (min-width: 480px) and (max-width: 639px) {
+  .stpl-company-hero-banner {
+    padding: 70px 15px;
+  }
+
+  .stpl-company-hero-main-heading {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .stpl-company-hero-tagline {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .stpl-company-hero-stats-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .stpl-stat-number-display {
+    font-size: 1.8rem;
+  }
+
+  .stpl-stat-label-text {
+    font-size: 0.95rem;
+  }
+
+  .stpl-company-description-section,
+  .stpl-company-services-overview-section,
+  .stpl-company-vision-mission-section,
+  .stpl-company-leadership-section {
+    padding: 50px 15px;
+  }
+
+  .stpl-company-section-header {
+    margin-bottom: 35px;
+  }
+
+  .stpl-company-section-title {
+    font-size: 1.8rem;
+  }
+
+  .stpl-company-section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .stpl-company-description-content {
+    grid-template-columns: 1fr;
+  }
+
+  .stpl-company-description-text {
+    padding: 20px;
+  }
+
+  .stpl-company-services-grid,
+  .stpl-company-vision-grid,
+  .stpl-company-leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stpl-company-service-card,
+  .stpl-company-vision-card {
+    padding: 20px;
+  }
+
+  .stpl-company-service-icon,
+  .stpl-company-vision-icon {
+    font-size: 2rem;
+  }
+
+  .stpl-company-service-title,
+  .stpl-company-vision-card-title {
+    font-size: 1.3rem;
+  }
+
+  .stpl-company-leadership-grid {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Small Mobile Devices (360px to 479px) */
+@media (min-width: 360px) and (max-width: 479px) {
+  .stpl-company-hero-banner {
+    padding: 60px 12px;
+  }
+
+  .stpl-company-hero-main-heading {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .stpl-company-hero-tagline {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .stpl-company-hero-stats-container {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 35px;
+  }
+
+  .stpl-stat-number-display {
+    font-size: 1.7rem;
+  }
+
+  .stpl-stat-label-text {
+    font-size: 0.9rem;
+  }
+
+  .stpl-company-description-section,
+  .stpl-company-services-overview-section,
+  .stpl-company-vision-mission-section,
+  .stpl-company-leadership-section {
+    padding: 45px 12px;
+  }
+
+  .stpl-company-section-header {
+    margin-bottom: 30px;
+  }
+
+  .stpl-company-section-title {
+    font-size: 1.6rem;
+  }
+
+  .stpl-company-section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .stpl-company-description-text {
+    padding: 18px;
+  }
+
+  .stpl-company-services-grid,
+  .stpl-company-vision-grid,
+  .stpl-company-leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .stpl-company-service-card,
+  .stpl-company-vision-card {
+    padding: 18px;
+  }
+
+  .stpl-company-service-icon,
+  .stpl-company-vision-icon {
+    font-size: 1.8rem;
+  }
+
+  .stpl-company-service-title,
+  .stpl-company-vision-card-title {
+    font-size: 1.2rem;
+  }
+
+  .stpl-company-service-description,
+  .stpl-company-vision-card-description {
+    font-size: 0.9rem;
+  }
+
+  .stpl-company-leader-info {
+    padding: 20px;
+  }
+
+  .stpl-company-leader-name {
+    font-size: 1.2rem;
+  }
+
+  .stpl-company-leader-position {
+    font-size: 0.9rem;
+  }
+
+  .stpl-company-leader-bio {
+    font-size: 0.85rem;
+  }
+
+  .stpl-company-expertise-tag {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+}
+
+/* Extra Small Mobile Devices (below 360px) */
+@media (max-width: 359px) {
+  .stpl-company-hero-banner {
+    padding: 50px 10px;
+  }
+
+  .stpl-company-hero-main-heading {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .stpl-company-hero-tagline {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+
+  .stpl-company-hero-stats-container {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .stpl-stat-number-display {
+    font-size: 1.5rem;
+  }
+
+  .stpl-stat-label-text {
+    font-size: 0.85rem;
+  }
+
+  .stpl-company-description-section,
+  .stpl-company-services-overview-section,
+  .stpl-company-vision-mission-section,
+  .stpl-company-leadership-section {
+    padding: 40px 10px;
+  }
+
+  .stpl-company-section-header {
+    margin-bottom: 25px;
+  }
+
+  .stpl-company-section-title {
+    font-size: 1.5rem;
+  }
+
+  .stpl-company-section-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .stpl-company-description-text {
+    padding: 15px;
+  }
+
+  .stpl-company-highlight-text {
+    font-size: 1rem;
+  }
+
+  .stpl-company-description-text p {
+    font-size: 0.85rem;
+  }
+
+  .stpl-company-services-grid,
+  .stpl-company-vision-grid,
+  .stpl-company-leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .stpl-company-service-card,
+  .stpl-company-vision-card {
+    padding: 15px;
+  }
+
+  .stpl-company-service-icon,
+  .stpl-company-vision-icon {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .stpl-company-service-title,
+  .stpl-company-vision-card-title {
+    font-size: 1.1rem;
+  }
+
+  .stpl-company-service-description,
+  .stpl-company-vision-card-description {
+    font-size: 0.85rem;
+  }
+
+  .stpl-company-leader-info {
+    padding: 18px;
+  }
+
+  .stpl-company-leader-name {
+    font-size: 1.1rem;
+  }
+
+  .stpl-company-leader-position {
+    font-size: 0.85rem;
+  }
+
+  .stpl-company-leader-bio {
+    font-size: 0.8rem;
+  }
+
+  .stpl-company-expertise-tag {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .stpl-company-hero-banner {
+    background: none;
+    color: #000;
+  }
+
+  .stpl-company-leader-social-links {
+    display: none;
+  }
+
+  .stpl-company-service-card,
+  .stpl-company-vision-card,
+  .stpl-company-leader-card {
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}

@@ -1,0 +1,175 @@
+/* ================= Reset ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= Header ================= */
+#stpl-header {
+  background: linear-gradient(12deg, #004e92, #03061c);
+  color: #fff;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ================= Container ================= */
+.stpl-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* ================= Logo ================= */
+#stpl-logo {
+  height: 50px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+#stpl-logo:hover {
+  transform: scale(1.1);
+}
+
+/* ================= Title ================= */
+#stpl-title {
+  flex: 1;
+  margin-left: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* ================= Navbar ================= */
+#stpl-navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#stpl-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 13px;
+}
+
+/* ================= Links ================= */
+.stpl-nav-item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 9px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.stpl-nav-item a:hover,
+.stpl-nav-item a.active {
+  color: #004e92;
+}
+
+/* ================= Hamburger ================= */
+#stpl-menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+*,
+*::before,
+*::after {
+  border: none;
+  box-sizing: border-box;
+}
+
+a{
+  border: none;
+}
+a:hover{
+  border: none;
+}
+/* ================= Mobile Menu ================= */
+@media (max-width: 1024px) {
+  #stpl-menu-toggle {
+    display: block;
+  }
+
+  #stpl-nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 260px;
+    background: linear-gradient(90deg, #004e92, #03061c);
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: all 0.35s ease;
+  }
+
+  #stpl-nav-links.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .stpl-nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stpl-nav-item a {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .stpl-nav-item a:hover {
+    background-color: #fff;
+    color: #004e92;
+  }
+}
+
+/* ================= Tablet ================= */
+@media (max-width: 768px) {
+  #stpl-title {
+    font-size: 1.1rem;
+  }
+
+  #stpl-logo {
+    height: 40px;
+  }
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 480px) {
+  #stpl-title {
+    font-size: 1rem;
+  }
+
+  #stpl-logo {
+    height: 35px;
+  }
+
+  #stpl-menu-toggle {
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+/* Main container */
+.dnsmi-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Heading */
+.dnsmi-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Paragraphs */
+.dnsmi-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.dnsmi-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.dnsmi-form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Inputs */
+.dnsmi-form input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.dnsmi-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button */
+.dnsmi-form button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dnsmi-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Note */
+.dnsmi-note {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dnsmi-note a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.dnsmi-note a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .dnsmi-container {
+    padding: 30px 20px;
+  }
+
+  .dnsmi-container h1 {
+    font-size: 24px;
+  }
+}

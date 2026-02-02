@@ -1,0 +1,112 @@
+
+/* ================= ABOUT HERO SECTION ================= */
+
+.about-hero {
+  width: 100%;
+  height: 100vh;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(6, 26, 44, 0.85) 20%,
+      rgba(6, 26, 44, 0.1) 65%,
+      rgba(6, 26, 44, 0.05) 90%
+    ),
+    url("connection-city.jpg");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* ================= HERO CONTENT WRAPPER ================= */
+
+.about-hero-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ================= CENTER-LEFT TEXT ALIGNMENT ================= */
+
+.center-left {
+  display: flex;
+  align-items: center;
+}
+
+/* ================= HEADING STYLE ================= */
+
+.about-hero-content h1 {
+  margin: 0;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #ffffff;
+  white-space: nowrap;
+  padding: 0 40%;
+}
+
+/* Highlight text */
+.about-hero-content h1 .highlight {
+  color: white;
+  font-weight: 600;
+}
+
+/* ================= VERTICAL LINE ================= */
+
+.about-hero-line {
+  width: 2px;
+  height: 0;
+  background-color: #00b4ff;
+  transition: height 0.8s ease;
+}
+.about-reveal span{
+  color: white;
+}
+
+/* ================= REVEAL ANIMATION (SCOPED) ================= */
+
+/* Initial hidden state */
+.about-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* When observer activates */
+.about-reveal-active .about-reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Line grow animation */
+.about-reveal-active .about-hero-line {
+  height: 70px;
+}
+
+/* Text slide + fade */
+.about-hero-content h1 {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.9s ease 0.3s, transform 0.9s ease 0.3s;
+}
+
+/* Activate text */
+.about-reveal-active h1 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .about-hero-content {
+    align-items: flex-start;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2.2rem;
+    white-space: normal;
+    padding: 0 10%;
+  }
+}

@@ -1,0 +1,195 @@
+/* =========================
+   Section Wrapper
+   (Connected to Above Section)
+========================= */
+
+.main-about-heading {
+  position: relative;
+  width: 100%;
+  padding: 120px 20px 110px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: white;
+  /* background-image:
+    linear-gradient(
+      to right,
+      rgba(113, 138, 193, 0.85),
+      rgba(118, 104, 197, 0.65),
+      rgba(74, 79, 161, 0.85)
+    ),
+    url("/about-bg.jpg"); */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Soft top connector shadow */
+.main-about-heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.15),
+    transparent
+  );
+}
+
+/* =========================
+   Content Container
+========================= */
+
+.about-heading {
+  position: relative;
+  max-width: 960px;
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 18px;
+  /* background: rgba(253, 238, 238, 0.9); */
+  /* backdrop-filter: blur(6px); */
+}
+
+/* Accent line above heading */
+.about-heading::before {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff9f1c, #ffbf69);
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+/* =========================
+   Heading Styling
+========================= */
+
+.about-heading h1 {
+  font-size: 2.9rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #080808;
+  margin-bottom: 26px;
+}
+
+/* =========================
+   Paragraph Styling
+========================= */
+
+.about-heading p {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #000000;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Scroll Reveal (Advanced)
+========================= */
+
+.about-heading.scroll-reveal {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.about-heading.scroll-reveal.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Heading delayed reveal */
+.about-heading.scroll-reveal.animate h1 {
+  animation: headingLift 0.9s ease forwards;
+}
+
+@keyframes headingLift {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Paragraph fade-in delay */
+.about-heading.scroll-reveal p {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.about-heading.scroll-reveal.animate p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+  transition-delay: 0.25s;
+}
+
+/* =========================
+   Tablet Responsive
+========================= */
+
+@media (max-width: 992px) {
+  .main-about-heading {
+    padding: 90px 20px;
+  }
+
+  .about-heading {
+    padding: 50px 30px;
+  }
+
+  .about-heading h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 576px) {
+  .main-about-heading {
+    padding: 70px 16px;
+  }
+
+  .about-heading {
+    padding: 40px 20px;
+    border-radius: 14px;
+  }
+
+  .about-heading h1 {
+    font-size: 1.95rem;
+    line-height: 1.35;
+  }
+
+  .about-heading p {
+    font-size: 0.98rem;
+  }
+}
+
+/* =========================
+   Accessibility
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal * {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}

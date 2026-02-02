@@ -1,0 +1,490 @@
+/* Customer Support Page Styles - STPL Network */
+
+/* Hero Section */
+.stpl-support-hero-banner {
+    background: linear-gradient(rgba(0, 78, 146, 0.9), rgba(3, 6, 28, 0.9)), url('//building-connections.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.stpl-hero-content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stpl-hero-main-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: stplFadeInDown 0.5s ease-out;
+}
+
+.stpl-hero-subtitle-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    animation: stplFadeInUp 0.5s ease-out;
+}
+
+.stpl-hero-cta-buttons-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: stplFadeIn 0.7s ease-out;
+}
+
+.stpl-cta-btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stpl-cta-primary-btn {
+    background: #004e92;
+    color: white;
+}
+
+.stpl-cta-secondary-btn {
+    background: white;
+    color: #004e92;
+}
+
+.stpl-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 24/7 Support Highlight */
+.stpl-support-highlight-section {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.stpl-highlight-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stpl-highlight-feature-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stpl-highlight-animated-icon {
+    font-size: 3rem;
+    color: #004e92;
+    margin-bottom: 20px;
+}
+
+.stpl-pulse-animation {
+    animation: stplPulseEffect 2s infinite;
+}
+
+@keyframes stplPulseEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.stpl-highlight-main-title {
+    font-size: 2rem;
+    color: #004e92;
+    margin-bottom: 15px;
+}
+
+.stpl-highlight-description-text {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.stpl-support-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stpl-feature-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.stpl-feature-list-item i {
+    color: #28a745;
+}
+
+/* Support Channels */
+.stpl-support-channels-section {
+    padding: 80px 20px;
+    background: white;
+}
+
+.stpl-channels-wrapper-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stpl-channels-section-title {
+    text-align: center;
+    color: #004e92;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.stpl-channel-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.stpl-channel-card-item {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stpl-channel-card-item:hover {
+    transform: translateY(-10px);
+}
+
+.stpl-channel-icon {
+    font-size: 2.5rem;
+    color: #004e92;
+    margin-bottom: 20px;
+}
+
+.stpl-channel-card-title {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.stpl-channel-card-description {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stpl-action-btn {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    text-align: center;          
+    padding: 10px 20px;       
+    cursor: pointer;
+    margin: 15px auto 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.stpl-phone-number-link,
+.stpl-email-contact-link {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    color: #004e92;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.stpl-phone-number-link:hover,
+.stpl-email-contact-link:hover {
+    background-color: #e9ecef;
+}
+
+.stpl-chat-action-btn,
+.stpl-ticket-action-btn {
+    background: #004e92;
+    color: white;
+    border: none;
+}
+
+.stpl-chat-action-btn:hover,
+.stpl-ticket-action-btn:hover {
+    background: #003366;
+}
+
+/* Priority Support */
+.stpl-priority-support-section {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.stpl-priority-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stpl-priority-section-title {
+    text-align: center;
+    color: #004e92;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.stpl-priority-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.stpl-priority-service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stpl-priority-service-card:hover {
+    transform: translateY(-5px);
+}
+
+.stpl-priority-service-icon {
+    font-size: 2rem;
+    color: #004e92;
+    margin-bottom: 20px;
+}
+
+.stpl-priority-card-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.stpl-priority-card-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Support Process */
+.stpl-support-process-section {
+    padding: 80px 20px;
+    background: white;
+}
+
+.stpl-process-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stpl-process-section-title {
+    text-align: center;
+    color: #004e92;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.stpl-process-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.stpl-process-step-item {
+    text-align: center;
+    position: relative;
+}
+
+.stpl-process-step-number {
+    width: 40px;
+    height: 40px;
+    background: #004e92;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-weight: bold;
+}
+
+.stpl-process-step-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stpl-process-step-description {
+    color: #666;
+}
+
+/* Status Section */
+.stpl-realtime-status-section {
+    padding: 60px 20px;
+    background: #f8f9fa;
+}
+
+.stpl-status-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stpl-status-section-title {
+    text-align: center;
+    color: #004e92;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.stpl-status-indicators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.stpl-status-indicator-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stpl-status-card-icon {
+    font-size: 2rem;
+    color: #004e92;
+    margin-bottom: 15px;
+}
+
+.stpl-status-card-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stpl-status-availability-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.stpl-status-availability-badge a {
+    text-decoration: none;
+    color: white;
+}
+
+.stpl-status-active-state .stpl-status-availability-badge {
+    background: #28a745;
+    color: white;
+}
+
+/* Animations */
+@keyframes stplFadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes stplFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes stplFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .stpl-hero-main-heading {
+        font-size: 2.5rem;
+    }
+
+    .stpl-support-features-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .stpl-hero-main-heading {
+        font-size: 2rem;
+    }
+
+    .stpl-hero-cta-buttons-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stpl-support-features-list {
+        grid-template-columns: 1fr;
+    }
+
+    .stpl-channel-cards-grid,
+    .stpl-priority-services-grid,
+    .stpl-process-steps-grid,
+    .stpl-status-indicators-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stpl-highlight-feature-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stpl-hero-main-heading {
+        font-size: 1.8rem;
+    }
+
+    .stpl-hero-subtitle-text {
+        font-size: 1rem;
+    }
+
+    .stpl-cta-btn {
+        padding: 12px 24px;
+    }
+
+    .stpl-highlight-animated-icon {
+        font-size: 2.5rem;
+    }
+
+    .stpl-channel-card-item,
+    .stpl-priority-service-card,
+    .stpl-status-indicator-card {
+        padding: 20px;
+    }
+}
