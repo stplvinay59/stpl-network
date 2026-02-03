@@ -15,7 +15,7 @@ const Footer = () => {
             {/* About */}
             <div className="stpl-footer-about" id="stpl-footer-about">
               <img
-                src="STPL_LOGO.png"
+                src="logo.png"
                 alt="STPL Logo"
                 className="stpl-footer-logo"
               />

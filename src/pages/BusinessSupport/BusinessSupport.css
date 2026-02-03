@@ -15,7 +15,7 @@
 
 /* Hero Section */
 .stpl-business-hero-banner {
-    background: linear-gradient(rgba(3, 6, 28, 0.9), rgba(0, 78, 146, 0.9)), url('//building-connections.webp');
+    background: linear-gradient(rgba(3, 6, 28, 0.9), rgba(0, 78, 146, 0.9)), url('/frontend/public/building-connections.webp');
     background-size: cover;
     background-position: center;
     color: var(--stpl-light-text);

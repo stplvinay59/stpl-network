@@ -159,7 +159,7 @@ const CompanyOverView = () => {
             {/* Co-Founder & CTO */}
             <div className="stpl-company-leader-card">
               <div className="stpl-company-leader-image">
-                <img src="//avatar.jpg" alt="Co-Founder & CTO" />
+                <img src="/avatar.jpg" alt="Co-Founder & CTO" />
                 <div className="stpl-company-leader-social-links">
                   <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
                   <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
@@ -180,7 +180,7 @@ const CompanyOverView = () => {
             {/* Head of Business Development */}
             <div className="stpl-company-leader-card">
               <div className="stpl-company-leader-image">
-                <img src="//avatar.jpg" alt="Head of Business Development" />
+                <img src="/avatar.jpg" alt="Head of Business Development" />
                 <div className="stpl-company-leader-social-links">
                   <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
                   <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
